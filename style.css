@@ -15,14 +15,63 @@
 .sidebar {
     grid-column: 1/2;
     grid-row: 1/3;
-    background-color: blue;
+    background-color: rgb(145, 145, 194);
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+    gap: 50px;
 }
 
-.header {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background-color: antiquewhite;
+.sidebar-title {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
 }
+
+.sidebar-title svg {
+    width: 3rem;
+    height: 3rem;
+    fill: white;
+    margin-right: 20px;
+}
+
+.icon-buttons {
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.icon-buttons svg {
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    margin-right: 25px;
+}
+
+
+.icon-settings {
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.icon-settings svg {
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+    margin-right: 25px;
+}
+
 
 .main-content {
     grid-column: 2/3;
