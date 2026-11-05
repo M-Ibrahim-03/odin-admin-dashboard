@@ -239,6 +239,24 @@
 .announcement-container {
   background-color: white;
   border-radius: 6px;
-  padding: 24px;
+  padding: 36px 36px 12px 36px;
+  margin-bottom: 32px;
 }
 
+  
+.announcement-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+
+.announcement-description {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
