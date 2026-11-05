@@ -1,79 +1,174 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 .container {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
 }
 
 .sidebar {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    background-color: rgb(145, 145, 194);
-    display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
-    gap: 50px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: rgb(145, 145, 194);
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+  gap: 50px;
 }
 
 .sidebar-title {
-    color: white;
-    font-size: 2rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-left: 20px;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
 }
 
 .sidebar-title svg {
-    width: 3rem;
-    height: 3rem;
-    fill: white;
-    margin-right: 20px;
+  width: 3rem;
+  height: 3rem;
+  fill: white;
+  margin-right: 20px;
 }
 
 .icon-buttons {
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-left: 30px;
-    margin-top: 20px;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .icon-buttons svg {
-    width: 2rem;
-    height: 2rem;
-    fill: white;
-    margin-right: 25px;
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  margin-right: 25px;
 }
 
-
 .icon-settings {
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-left: 30px;
-    margin-top: 20px;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .icon-settings svg {
-    width: 2rem;
-    height: 2rem;
-    fill: white;
-    margin-right: 25px;
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  margin-right: 25px;
 }
 
-
 .main-content {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgb(224, 221, 221);
+}
+
+.header {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
+    box-shadow: 0 0 2px 0 grey;
+}
+
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.search-section svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.name-section {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  gap: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.name-section > svg {
+  stroke: black;
+  fill: white;
+}
+
+.name-section .user {
+  border-radius: 50%;
+  background-color: grey;
+  fill: ghostwhite;
+  padding: 4px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.search input {
+  border-radius: 24px;
+  border-style: none;
+  background-color: rgb(192, 191, 191);
+  width: 40rem;
+  height: 2rem;
+}
+
+.header-info {
+    margin-top: -20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  gap: 30px;
+}
+
+.user-info {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: grey;
+  fill: ghostwhite;
+  padding: 4px;
+}
+
+.details .account {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.post {
+    display: flex;
+    gap: 50px;
+    margin-right: 150px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-buttons {
+    color: white;
+    background-color: rgb(131, 197, 219);
+    padding: 8px 24px;
+    border-radius: 24px;
 }
